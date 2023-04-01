@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Persistance.EF\Persistance.EF.csproj" />
+    <ProjectReference Include="..\Persistance.Memory\Persistance.Memory.csproj" />
+    <ProjectReference Include="..\Stamon.Types\Stamon.Types.csproj" />
+    <ProjectReference Include="..\Stamon\Stamon.csproj" />
+  </ItemGroup>
+
+</Project>
