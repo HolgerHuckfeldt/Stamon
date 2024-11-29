@@ -23,10 +23,10 @@ namespace Stamon.Services
         private bool _doForward;
         private string _forwardTo;
 
-        private ConcurrentQueue<string> _forwards = new ConcurrentQueue<string>();
+        private readonly ConcurrentQueue<string> _forwards = new ConcurrentQueue<string>();
         private System.Timers.Timer forwardTimer;
 
-        private object _lock = new object();
+        private readonly object _lock = new object();
 
         public StamonService(
             IStamonDatabasePersistance storeDatabase,
