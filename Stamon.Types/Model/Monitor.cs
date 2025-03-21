@@ -9,7 +9,7 @@ namespace Stamon.Types.Model
         /// <summary>
         /// The name of the monitor
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// The Scale of the monitor, like second or minute
